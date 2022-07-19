@@ -1,0 +1,67 @@
+.main-banner {
+  background-color: $grey-light;
+  position: relative;
+  height: 690px;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: calc(950 / 1920 * 100%);
+
+    img {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__animation {
+    position: absolute;
+    z-index: 1;
+    left: -347px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    max-width: var(--container-width);
+    padding: var(--container-padding);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 580px;
+
+    h1{
+      font-size: 55px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      max-width: 490px;
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+
+    a {
+      width: 288px;
+      @extend %btn;
+    }
+  }
+
+}

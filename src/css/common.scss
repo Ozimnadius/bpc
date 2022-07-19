@@ -1,0 +1,144 @@
+%btn {
+  width: 239px;
+  height: 59px;
+  background-color: $blue;
+  color: $bg;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tr;
+
+  &:hover {
+    background-color: adjust-color($blue, $lightness: -10%);
+  }
+}
+
+.btn {
+  @extend %btn;
+}
+
+.link{
+  --link-color: #1b4ed1;
+  color: var(--link-color);
+  font-size: 22px;
+  text-transform: uppercase;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  a{
+    color: var(--link-color);
+    font-size: 22px;
+    text-transform: uppercase;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    span{
+      color: var(--link-color);
+    }
+
+    svg{
+      display: block;
+      path{
+        stroke: var(--link-color);
+      }
+    }
+  }
+
+  &--white{
+    --link-color: #fff;
+  }
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+%header {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.h1 {
+  @extend %header;
+  font-size: 55px;
+  line-height: 120%;
+}
+
+.h2 {
+  @extend %header;
+  font-size: 45px;
+  line-height: 120%;
+}
+
+.h3 {
+  @extend %header;
+  font-size: 28px;
+  line-height: 130%;
+}
+
+.h4 {
+  @extend %header;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@each $i in h1, h2, h3, h4 {
+  #{$i} {
+    @extend .#{$i};
+  }
+}
+
+%txt {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  color: $black;
+}
+
+.txt {
+  @extend %txt;
+  font-size: 17px;
+  line-height: 140%;
+}
+
+.txt2 {
+  @extend %txt;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.sub {
+  @extend %txt;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.color{
+  &-blue{
+    color: $blue;
+  }
+}
+
+.text-border{
+  opacity: .5;
+  font-size: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px $bg;
+  -webkit-text-fill-color: transparent;
+  line-height: 105%;
+}
+

@@ -1,0 +1,27 @@
+.nav{
+  display: flex;
+  gap: 45px;
+
+  &__item{
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+    @include tr;
+
+    &:hover{
+      color: var(--color-link);
+
+      svg{
+        opacity: 1;
+      }
+    }
+
+    svg{
+      position: absolute;
+      right: calc(100% + 10px);
+      top: 3px;
+      opacity: 0;
+      @include tr;
+    }
+  }
+}

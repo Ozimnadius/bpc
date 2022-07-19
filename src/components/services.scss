@@ -1,0 +1,50 @@
+.services{
+  padding: 70px 0;
+
+  &__title{
+    margin-bottom: 55px;
+  }
+
+  &__list{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 65px;
+  }
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+
+  &__img{
+    position: relative;
+    z-index: 2;
+    img{
+      width: 100%;
+      aspect-ratio: 307/275;
+    }
+  }
+
+  &__bottom{
+    background-color: #f2f4f8;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: -54%;
+    padding: calc(54% + 25px) 25px 35px;
+    flex-grow: 1;
+  }
+
+  &__title{
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+
+  &__txt{
+    font-size: 13px;
+    line-height: 140%;
+  }
+
+}

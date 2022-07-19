@@ -1,0 +1,22 @@
+.clients{
+  padding-top: 80px;
+  padding-bottom: 65px;
+
+  &__title{
+    margin-bottom: 35px;
+  }
+
+  &__list{
+    display:grid;
+
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+  }
+
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F2F4F8;
+  }
+}

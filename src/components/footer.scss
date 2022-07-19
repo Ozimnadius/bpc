@@ -1,0 +1,90 @@
+.footer {
+  background-color: $blue;
+  padding: 60px 0;
+  color: $bg;
+  position: relative;
+
+  .container {
+    max-width: 1440px;
+    padding: 0 20px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'logo menu contacts addr';
+    gap: 20px;
+
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(1) {
+      grid-area: logo;
+    }
+
+    &:nth-child(2) {
+      grid-area: menu;
+    }
+
+    &:nth-child(3) {
+      grid-area: contacts;
+    }
+
+    &:nth-child(4) {
+      grid-area: addr;
+    }
+
+  }
+
+  &__logo {
+    a {
+      display: block;
+    }
+  }
+
+  &__title {
+    color: currentColor;
+    margin-bottom: 10px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    font-family: Inter;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+
+  %footer-contact {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__tel {
+    margin-bottom: 5px;
+
+    a {
+      @extend %footer-contact;
+    }
+  }
+
+  &__email {
+    a {
+      @extend %footer-contact;
+    }
+  }
+
+  &__addr {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
