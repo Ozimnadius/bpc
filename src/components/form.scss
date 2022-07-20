@@ -1,0 +1,57 @@
+.form {
+  background: #F2F4F8;
+  width: 375px;
+  padding: 50px 20px 60px;
+  position: relative;
+
+  @media (max-width: 767.98px){
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &:before{
+    content: 'Мы скоро с Вами свяжемся!';
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F4F8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @extend .h3;
+  }
+
+  &__close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  &__title{
+    font-size: 21px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__fields {
+    margin-bottom: 25px;
+  }
+
+  &__accept{
+    margin-bottom: 35px;
+  }
+
+  &__submit{
+    margin: 0 auto;
+  }
+
+  &.sended{
+    &:before{
+      display: flex;
+    }
+  }
+}

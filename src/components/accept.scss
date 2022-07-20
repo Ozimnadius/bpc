@@ -1,0 +1,42 @@
+.accept {
+
+  &__input {
+    display: none;
+    &:checked + .accept__fake {
+      .accept__check {
+        svg {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__fake {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__check {
+    flex-shrink: 0;
+    width: 23px;
+    height: 23px;
+    border: 1px solid $txt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      display: none;
+    }
+  }
+
+  &__content{
+    font-family: Inter;
+    font-size: 14px;
+
+    a{
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.fields{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  %input{
+    padding: 12px 0;
+    color: $txt;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid $border;
+    width: 100%;
+
+    &:focus,&:active{
+      border-color: $blue;
+    }
+    
+    &:focus:invalid,&:active:invalid{
+      border-color: $red;
+    }
+  }
+
+
+
+  &__input{
+    @extend %input;
+  }
+}

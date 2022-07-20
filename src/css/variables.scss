@@ -14,6 +14,22 @@
   --color-link-hover: #00166f;
 
   --transition: 0.5s;
+
+  --header-height: 80px;
+
+  @media (max-width: 1919.98px){
+    --container-padding: 0 130px;
+  }
+  @media (max-width: 1439.98px){
+    --container-padding: 0 80px;
+  }
+  @media (max-width: 1023.98px){
+    --container-padding: 0 40px;
+    --header-height: 70px;
+  }
+  @media (max-width: 767.98px){
+    --container-padding: 0 15px;
+  }
 }
 
 $font: 'Roboto Condensed', Arial, sans-serif;

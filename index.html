@@ -40,24 +40,12 @@
                             <span>Кто мы</span>
                         </a>
                         <a href="#services" class="nav__item">
-                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L12 12M12 12V1M12 12H1" stroke="#1B4ED1"/>
-                            </svg>
                             <span>Услуги</span>
                         </a>
                         <a href="#clients" class="nav__item">
-                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L12 12M12 12V1M12 12H1" stroke="#1B4ED1"/>
-                            </svg>
                             <span>заказчики</span>
                         </a>
                         <a href="#contacts" class="nav__item">
-                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L12 12M12 12V1M12 12H1" stroke="#1B4ED1"/>
-                            </svg>
                             <span>контакты</span>
                         </a>
 
@@ -77,6 +65,11 @@
                         Контакты
                     </a>
                 </div>
+                <a href="#" class="header__nav-open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
         </header>
     </div>
@@ -96,40 +89,35 @@
                                               stroke="#1B4ED1" stroke-width="0.84375"/>
                                         <animateTransform attributeName="transform" attributeType="XML" type="rotate"
                                                           dur="90s" from="0 405 405" to="360 405 405"
-                                                          repeatCount="indefinite"
-                                        / >
+                                                          repeatCount="indefinite">
                                     </g>
                                     <g>
                                         <path d="M405 135C324.493 135 252.216 170.235 202.749 226.125" stroke="white"
                                               stroke-width="3.375"/>
                                         <animateTransform attributeName="transform" attributeType="XML" type="rotate"
                                                           dur="45s" from="0 405 405" to="360 405 405"
-                                                          repeatCount="indefinite"
-                                        / >
+                                                          repeatCount="indefinite">
                                     </g>
                                     <g>
                                         <path d="M660 405C660 545.833 545.833 660 405 660M150 405C150 461.658 168.478 513.999 199.736 556.328"
                                               stroke="#1B4ED1" stroke-width="0.836066"/>
                                         <animateTransform attributeName="transform" attributeType="XML" type="rotate"
                                                           dur="45s" from="0 405 405" to="-360 405 405"
-                                                          repeatCount="indefinite"
-                                        / >
+                                                          repeatCount="indefinite">
                                     </g>
                                     <g>
                                         <path d="M352.096 201.72C368.998 197.334 386.726 195 405 195C520.98 195 615 289.02 615 405C615 444.76 603.95 481.939 584.754 513.635M210.76 325.038C200.603 349.685 195 376.688 195 405C195 435.336 201.432 464.17 213.008 490.212M228.532 518.885C265.935 576.722 330.997 615 405 615C451.194 615 493.903 600.085 528.577 574.808"
                                               stroke="#1B4ED1" stroke-width="0.807692"/>
                                         <animateTransform attributeName="transform" attributeType="XML" type="rotate"
                                                           dur="180s" from="0 405 405" to="360 405 405"
-                                                          repeatCount="indefinite"
-                                        / >
+                                                          repeatCount="indefinite">
                                     </g>
                                     <g>
                                         <path d="M556.923 260.017C528.987 230.752 492.681 209.546 451.846 200.242M198.647 365.824C196.253 378.515 195 391.61 195 404.998C195 426.798 198.322 447.823 204.487 467.593"
                                               stroke="white" stroke-width="3.23077"/>
                                         <animateTransform attributeName="transform" attributeType="XML" type="rotate"
                                                           dur="45s" from="0 405 405" to="-360 405 405"
-                                                          repeatCount="indefinite"
-                                        / >
+                                                          repeatCount="indefinite">
                                     </g>
                                     <g>
                                         <path d="M405 560C319.396 560 250 490.604 250 405C250 319.396 319.396 250 405 250C490.604 250 560 319.396 560 405C560 469.289 520.86 524.436 465.11 547.914"
@@ -140,8 +128,7 @@
                                               stroke="#1B4ED1" stroke-width="0.736842"/>
                                         <animateTransform attributeName="transform" attributeType="XML" type="rotate"
                                                           dur="90s" from="0 405 405" to="-360 405 405"
-                                                          repeatCount="indefinite"
-                                        / >
+                                                          repeatCount="indefinite">
                                     </g>
                                     <g>
                                         <path d="M545 405C545 482.32 482.32 545 405 545" stroke="white"
@@ -164,13 +151,13 @@
                                     Компания основана в 2013 году, оказывает полный спектр услуг сопровождения
                                     ИТ-компаний. Работает на территории России.
                                 </p>
-                                <a href="#feed">Получить консультацию</a>
+                                <a href="#feed" data-action="openForm">Получить консультацию</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="page__section">
+            <section id="services" class="page__section">
                 <div class="services">
                     <div class="container services__container">
                         <div class="h2 services__title">
@@ -231,7 +218,7 @@
                     </div>
                 </div>
             </section>
-            <section class="page__section">
+            <section id="who" class="page__section">
                 <div class="about">
                     <div class="about__left">
                         <img src="/images/content/about/img.png" alt="о компании">
@@ -249,7 +236,7 @@
                     </div>
                 </div>
             </section>
-            <section class="page__section">
+            <section id="clients" class="page__section">
                 <div class="clients">
                     <div class="container">
                         <div class="h2 clients__title">
@@ -273,7 +260,7 @@
         </main>
     </div>
     <div class="wrapper__footer">
-        <footer class="footer">
+        <footer id="contacts" class="footer">
             <div class="container">
                 <div class="footer__grid">
                     <div class="footer__col">
@@ -306,6 +293,50 @@
                 </div>
             </div>
         </footer>
+    </div>
+</div>
+<div class="popup">
+    <div class="popup__content">
+        <form class="form" action="/php/ajax.php" method="post">
+            <a href="#" class="form__close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.3332 8.54675L23.4532 6.66675L15.9998 14.1201L8.5465 6.66675L6.6665 8.54675L14.1198 16.0001L6.6665 23.4534L8.5465 25.3334L15.9998 17.8801L23.4532 25.3334L25.3332 23.4534L17.8798 16.0001L25.3332 8.54675Z" fill="black"/>
+                </svg>
+            </a>
+            <div class="form__title">Получить консультацию</div>
+            <div class="form__fields">
+                <div class="fields">
+                    <div class="fields__item">
+                        <input class="fields__input" type="text" name="name" required
+                               placeholder="*Имя">
+                    </div>
+                    <div class="fields__item">
+                        <input class="fields__input" type="text" name="company"
+                               placeholder="Название компании">
+                    </div>
+                    <div class="fields__item">
+                        <input class="fields__input" type="tel" name="tel" placeholder="Телефон">
+                    </div>
+                    <div class="fields__item">
+                        <input class="fields__input" type="email" name="email" required
+                               placeholder="*e-mail">
+                    </div>
+                </div>
+            </div>
+            <div class="form__accept">
+                <label class="accept">
+                    <input class="accept__input" type="checkbox" name="accept" checked><span
+                        class="accept__fake"><span class="accept__check"><svg width="19" height="15"
+                                                                              viewBox="0 0 19 15"
+                                                                              fill="none"
+                                                                              xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8.68L5.5 13L18 1" stroke="#1B4ED1" stroke-width="2"/>
+</svg></span><span class="accept__content">Я принимаю условия <a href="/">Пользовательского соглашения</a> и согласен с <a
+                        href="/">Политикой конфиденциальности</a></span></span>
+                </label>
+            </div>
+            <button class="btn form__submit" type="submit">Обсудить проект</button>
+        </form>
     </div>
 </div>
 </body>

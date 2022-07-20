@@ -1,14 +1,38 @@
 .services{
   padding: 70px 0;
+  @media (max-width: 1439.98px){
+    padding: 55px 0;
+  }
 
   &__title{
     margin-bottom: 55px;
+    @media (max-width: 1439.98px){
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767.98px){
+      margin-bottom: 25px;
+    }
   }
 
   &__list{
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 65px;
+
+    @media (max-width: 1919.98px){
+        gap: 40px 120px;
+    }
+    @media (max-width: 1439.98px){
+       gap: 40px 70px;
+    }
+    @media (max-width: 767.98px){
+       gap: 15px;
+    }
+  }
+
+  &__item{
+    width: 306px;
   }
 }
 

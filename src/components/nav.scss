@@ -1,27 +1,30 @@
 .nav{
   display: flex;
   gap: 45px;
+  @media (max-width: 1439.98px){
+    background: var(--color-bg);
+    flex-direction: column;
+    width: 375px;
+    padding: 30px;
+    height: calc(100vh - var(--header-height));
+  }
 
   &__item{
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 16px;
     text-transform: uppercase;
     @include tr;
 
     &:hover{
       color: var(--color-link);
-
-      svg{
-        opacity: 1;
-      }
     }
 
     svg{
-      position: absolute;
-      right: calc(100% + 10px);
-      top: 3px;
-      opacity: 0;
-      @include tr;
+      path{
+        stroke: currentColor;
+      }
     }
   }
 }
