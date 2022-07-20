@@ -101,6 +101,7 @@
   }
 
   &__email {
+    display: none;
     a {
       @extend %footer-contact;
     }

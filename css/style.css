@@ -603,6 +603,7 @@ h4 {
 }
 
 .main-banner__content a {
+  display: none;
   width: 288px;
 }
 
@@ -998,6 +999,10 @@ h4 {
 
 .footer__tel {
   margin-bottom: 5px;
+}
+
+.footer__email {
+  display: none;
 }
 
 .footer__addr {
