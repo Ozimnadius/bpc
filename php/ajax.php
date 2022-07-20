@@ -13,7 +13,7 @@ function sendMail()
 
     ob_start();
     ?>
-    <h3>Обсудим Проект</h3>
+    <h3>Обсудим Проект(лендинг)</h3>
     <table>
         <tr>
             <td>
