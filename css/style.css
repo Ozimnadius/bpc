@@ -378,6 +378,13 @@ h4 {
   top: 0;
   left: 0;
   right: 0;
+  height: var(--header-height);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__container {
@@ -402,10 +409,6 @@ h4 {
 .header__nav.active {
   -webkit-transform: translateX(0);
   transform: translateX(0);
-}
-
-.header__tel {
-  margin-right: 120px;
 }
 
 .header__tel a {
@@ -445,6 +448,7 @@ h4 {
   color: var(--color-bg);
   font-size: 20px;
   text-transform: uppercase;
+  display: none;
 }
 
 .header__nav-open {
@@ -1018,10 +1022,6 @@ h4 {
 
   .header__nav {
     margin-right: 60px;
-  }
-
-  .header__tel {
-    margin-right: 40px;
   }
 
   .main-banner {
