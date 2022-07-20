@@ -624,7 +624,7 @@ h4 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 65px;
+  gap: 60px;
 }
 
 .services__item {
