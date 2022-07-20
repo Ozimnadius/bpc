@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root {
-  --font: "Roboto Condensed",Arial,sans-serif;
-  --font2: "Inter",Arial,sans-serif;
+  --font: "Roboto Condensed", Arial, sans-serif;
+  --font2: "Inter", Arial, sans-serif;
   --font-size: 17px;
   --font-weight: 400;
   --line-height: 1.42;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: local("Roboto Condensed Medium"),local("RobotoCondensed-Medium"),url("../fonts/RobotoCondensed-Medium.woff2") format("woff2"),url("../fonts/RobotoCondensed-Medium.woff") format("woff");
+  src: local("Roboto Condensed Medium"), local("RobotoCondensed-Medium"), url("../fonts/RobotoCondensed-Medium.woff2") format("woff2"), url("../fonts/RobotoCondensed-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: local("Roboto Condensed"),local("RobotoCondensed-Regular"),url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  src: local("Roboto Condensed"), local("RobotoCondensed-Regular"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter Regular"),local("Inter-Regular"),url("../fonts/Inter-Regular.woff2") format("woff2"),url("../fonts/Inter-Regular.woff") format("woff");
+  src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter Medium"),local("Inter-Medium"),url("../fonts/Inter-Medium.woff2") format("woff2"),url("../fonts/Inter-Medium.woff") format("woff");
+  src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter Bold"),local("Inter-Bold"),url("../fonts/Inter-Bold.woff2") format("woff2"),url("../fonts/Inter-Bold.woff") format("woff");
+  src: local("Inter Bold"), local("Inter-Bold"), url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -68,8 +68,8 @@ html {
 }
 
 *,
-:after,
-:before {
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font: inherit;
@@ -157,9 +157,9 @@ body {
 .content h4,
 .content h5,
 .content h6,
-.content ol,
 .content p,
-.content ul {
+.content ul,
+.content ol {
   margin: 1em 0;
 }
 
@@ -184,8 +184,8 @@ p {
 }
 
 img,
-picture,
-svg {
+svg,
+picture {
   display: block;
   max-width: 100%;
 }
@@ -199,8 +199,8 @@ button {
   color: inherit;
 }
 
-ol,
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -214,8 +214,8 @@ textarea {
   color: inherit;
 }
 
-.btn,
-.main-banner__content a {
+.main-banner__content a,
+.btn {
   width: 239px;
   height: 59px;
   background-color: #1b4ed1;
@@ -237,8 +237,8 @@ textarea {
   transition: var(--transition);
 }
 
-.btn:hover,
-.main-banner__content a:hover {
+.main-banner__content a:hover,
+.btn:hover {
   background-color: #153da4;
 }
 
@@ -289,16 +289,16 @@ textarea {
   overflow: hidden;
 }
 
-.form:before,
-.h1,
-.h2,
-.h3,
 .h4,
-h1,
-h2,
+h4,
+.h3,
+.form:before,
 h3,
-h4 {
-  font-family: "Roboto Condensed",Arial,sans-serif;
+.h2,
+h2,
+.h1,
+h1 {
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #000000;
@@ -317,8 +317,8 @@ h2 {
   line-height: 120%;
 }
 
-.form:before,
 .h3,
+.form:before,
 h3 {
   font-size: 28px;
   line-height: 130%;
@@ -332,8 +332,8 @@ h4 {
 }
 
 .sub,
-.txt,
-.txt2 {
+.txt2,
+.txt {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -371,8 +371,8 @@ h4 {
 
 .header {
   background-color: var(--color-bg);
-  -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.05);
-  box-shadow: 0px 3px 6px rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
   position: fixed;
   z-index: 10;
   top: 0;
@@ -460,7 +460,7 @@ h4 {
   position: relative;
 }
 
-.header__nav-open.active span:first-child {
+.header__nav-open.active span:nth-child(1) {
   -webkit-transform: translateY(-50%) rotate(45deg);
   transform: translateY(-50%) rotate(45deg);
 }
@@ -489,7 +489,7 @@ h4 {
   transition: var(--transition);
 }
 
-.header__nav-open span:first-child {
+.header__nav-open span:nth-child(1) {
   -webkit-transform: translateY(calc(-50% - var(--margin)));
   transform: translateY(calc(-50% - var(--margin)));
 }
@@ -732,7 +732,7 @@ h4 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 35px 1fr 35px 1fr;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 35px;
 }
 
@@ -826,13 +826,13 @@ h4 {
   width: 100%;
 }
 
-.fields .fields__input:active,
-.fields .fields__input:focus {
+.fields .fields__input:focus,
+.fields .fields__input:active {
   border-color: #1b4ed1;
 }
 
-.fields .fields__input:active:invalid,
-.fields .fields__input:focus:invalid {
+.fields .fields__input:focus:invalid,
+.fields .fields__input:active:invalid {
   border-color: #e2353f;
 }
 
@@ -840,7 +840,7 @@ h4 {
   display: none;
 }
 
-.accept__input:checked+.accept__fake .accept__check svg {
+.accept__input:checked + .accept__fake .accept__check svg {
   display: block;
 }
 
@@ -887,7 +887,7 @@ h4 {
 .popup {
   position: fixed;
   z-index: 100;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   top: 0;
   bottom: 0;
   left: 0;
@@ -923,7 +923,7 @@ h4 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "logo menu contacts addr";
   gap: 20px;
 }
@@ -938,7 +938,7 @@ h4 {
   flex-direction: column;
 }
 
-.footer__col:first-child {
+.footer__col:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
@@ -989,8 +989,8 @@ h4 {
 }
 
 .footer .footer__email a,
-.footer .footer__tel a,
 .footer__email .footer a,
+.footer .footer__tel a,
 .footer__tel .footer a {
   font-family: Inter;
   font-size: 20px;
@@ -1011,9 +1011,7 @@ h4 {
   font-weight: 400;
 }
 
-/*# sourceMappingURL=style.css.map */
-
-@media (max-width:1919.98px) {
+@media (max-width: 1919.98px) {
   :root {
     --container-padding: 0 130px;
   }
@@ -1056,7 +1054,7 @@ h4 {
   }
 }
 
-@media (max-width:1439.98px) {
+@media (max-width: 1439.98px) {
   :root {
     --container-padding: 0 80px;
   }
@@ -1147,7 +1145,7 @@ h4 {
   }
 }
 
-@media (max-width:1023.98px) {
+@media (max-width: 1023.98px) {
   :root {
     --container-padding: 0 40px;
     --header-height: 70px;
@@ -1213,13 +1211,13 @@ h4 {
 
   .footer__grid {
     -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px 20px;
     -ms-grid-rows: auto 40px auto;
     grid-template-areas: "logo addr" "menu contacts";
   }
 
-  .footer__col:first-child {
+  .footer__col:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
@@ -1240,7 +1238,7 @@ h4 {
   }
 }
 
-@media (max-width:767.98px) {
+@media (max-width: 767.98px) {
   :root {
     --container-padding: 0 15px;
   }
@@ -1312,7 +1310,7 @@ h4 {
     grid-template-areas: "logo" "contacts" "addr" "menu";
   }
 
-  .footer__col:first-child {
+  .footer__col:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }

@@ -1,1 +1,64 @@
-"use strict";window.addEventListener("load",(function(){var e=document.querySelector(".header__nav"),t=document.querySelector(".header__nav-open");document.body.addEventListener("click",(function(a){if(a.target.closest(".header__nav-open"))return a.preventDefault(),e.classList.toggle("active"),void t.classList.toggle("active");e.classList.remove("active"),t.classList.remove("active")}));var a=document.querySelector(".popup"),c=document.querySelector(".form");document.querySelector('[data-action="openForm"]').addEventListener("click",(function(e){e.preventDefault(),a.classList.add("active")})),a.addEventListener("click",(function(e){var t=e.target;t.closest(".form")&&!t.closest(".form__close")||a.classList.remove("active")})),c.addEventListener("submit",(function(e){e.preventDefault(),function(e){var t=$(e).serialize();$.ajax({dataType:"json",type:"POST",url:"/php/ajax.php",data:t,success:function(t){t.status?e.classList.add("sended"):alert("Что-то пошло не так, попробуйте еще раз!!!")},error:function(e){alert("Что-то пошло не так, попробуйте еще раз!!!")}})}(this)}))}));
+window.addEventListener('load', function () {
+    let nav = document.querySelector('.header__nav'),
+        navBtn = document.querySelector('.header__nav-open');
+
+    document.body.addEventListener('click', function (e) {
+        let target = e.target;
+
+        if (target.closest('.header__nav-open')) {
+            e.preventDefault();
+            nav.classList.toggle('active');
+            navBtn.classList.toggle('active');
+            return;
+        }
+
+        nav.classList.remove('active');
+        navBtn.classList.remove('active');
+
+
+    });
+
+    let popup = document.querySelector('.popup'),
+        form = document.querySelector('.form'),
+        btnOpenForm = document.querySelector('[data-action="openForm"]');
+
+    btnOpenForm.addEventListener('click', function (e) {
+        e.preventDefault();
+        popup.classList.add('active');
+    });
+
+    popup.addEventListener('click', function (e) {
+        let target = e.target;
+
+        if (!target.closest('.form') || target.closest('.form__close')) {
+            popup.classList.remove('active');
+        }
+    });
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        sendFeedData(this);
+    });
+
+    function sendFeedData(form) {
+        let data = $(form).serialize();
+
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: '/php/ajax.php',
+            data: data,
+            success: function (result) {
+                if (result.status) {
+                    form.classList.add('sended');
+                } else {
+                    alert('Что-то пошло не так, попробуйте еще раз!!!');
+                }
+            },
+            error: function (result) {
+                alert('Что-то пошло не так, попробуйте еще раз!!!');
+            }
+        });
+    }
+
+});
